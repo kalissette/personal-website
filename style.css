@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=PT+Mono&family=Quicksand:wght@400;600;700&display=swap');
+*{
+  font-family: 'Quicksand', monospace;
+}
+@media (min-width: 576px) {
+  .main-header{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+  .typewriter {
+    font-family: 'PT Mono', monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+}
+.main-menu{
+  color:yellow;
+}
+.main-header{
+  text-align:center;
+  display:flex;
+}
+.main-title, .carousel-caption{
+  padding:20%;
+}
+.carousel-inner img{
+  filter: brightness(75%);
+}
+.fixed-top{
+  top:20px;
+}
