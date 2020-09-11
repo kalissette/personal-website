@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="km icon" href="images/favicon.ico" type="image/x-icon" />
   <title>Karen Maraviglia</title>
 </head>
 
@@ -19,10 +20,24 @@
           LOGO
         </div>
         <div class="col-sm">
-          About me
-        </div>
-        <div class="col-sm">
-          Contact me
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-me">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact me</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
@@ -68,6 +83,58 @@
       </div>
     </div>
   </div>
+
+  <!-- ABOUT ME -->
+  <div id="about-me" class="container">
+    <div class="row d-flex description">
+      <div class="col-sm">
+        I work as a <b>Salesforce Developer</b> in a consultancy company.<br/>
+        I have three certifications: 
+        <ul>
+          <li>Salesforce Administrator</li>
+          <li>Salesforce Developer 1</li>
+          <li>Salesforce App Builder</li>
+        </ul>
+        <span>Apex Development</span>
+        <div class="meter">
+          <span style="width:80%;"><span class="progress"></span></span>
+        </div>
+        <span>Aura Component Framework</span>
+        <div class="meter">
+          <span style="width:70%;"><span class="progress"></span></span>
+        </div>
+        <span>Lightning Web Components</span>
+        <div class="meter">
+          <span style="width:50%;"><span class="progress"></span></span>
+        </div>
+      </div>
+      <div class="col-sm">
+        I want to be a <b>Front-End Developer</b>.<br/>
+        I am attending the Front-End Developer course on the Start2Impact course.<br/>
+        Coming soon with new projects.
+      </div>
+      <div class="col-sm">
+        I am a <b>Digital Artist.</b><br/>
+        You can check my last work on my <a href="#gallery">Gallery</a> or you can buy on Mini Model Garage Site. You can also follow me on Instagram for more content.<br/>
+        <span>Photoshop - Digital Drawing</span>
+        <div class="meter">
+          <span style="width:80%;"><span class="progress"></span></span>
+        </div>
+        <span>Illustrator - Illustration</span>
+        <div class="meter">
+          <span style="width:80%;"><span class="progress"></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- GAllERY -->
+  <div id="gallery" class="container">
+    <div class="row">
+      gallery
+    </div>
+  </div>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
