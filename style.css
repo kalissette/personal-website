@@ -47,6 +47,9 @@
 .main-title, .carousel-caption{
   padding:20%;
 }
+.link-item:hover{
+  cursor: pointer;
+}
 .carousel-inner img{
   filter: brightness(75%);
 }
