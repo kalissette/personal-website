@@ -40,6 +40,9 @@
 h5{
   font-weight: 700;
 }
+.navbar {
+  background-color: #806D5D;
+}
 .meter { 
   height: 5px;
   position: relative;
@@ -53,7 +56,7 @@ h5{
 }
 
 .progress {
-  background-color: #e4c465;
+  background-color: #FFB16E;
   animation: progressBar 3s ease-in-out;
   animation-fill-mode:both; 
 }
@@ -81,9 +84,20 @@ h5{
   top:20px;
 }
 .description{
-  padding-top:20%;
+  background-color: #FFDAB9;
+  border:2px dotted #FFB16E;
+  border-radius: 5px;
 }
-
+.box{
+  margin:2%;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.box:hover {
+  color: white;
+}
 #about-me{
   height:100vh;
 }
