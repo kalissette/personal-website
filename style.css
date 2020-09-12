@@ -41,7 +41,10 @@ h5{
   font-weight: 700;
 }
 .navbar {
-  background-color: #806D5D;
+  background-color: #AC3B61;
+}
+.carousel-item .d-block{
+  filter: blur(1px);
 }
 .meter { 
   height: 5px;
@@ -56,7 +59,7 @@ h5{
 }
 
 .progress {
-  background-color: #FFB16E;
+  background-color: #123C60;
   animation: progressBar 3s ease-in-out;
   animation-fill-mode:both; 
 }
@@ -84,9 +87,10 @@ h5{
   top:20px;
 }
 .description{
-  background-color: #FFDAB9;
-  border:2px dotted #FFB16E;
+  background-color: #EDC7B7;
+  border:2px dotted #BAB2B5;
   border-radius: 5px;
+  color: #123C60;
 }
 .box{
   margin:2%;
@@ -96,8 +100,8 @@ h5{
   transition: 0.3s;
 }
 .box:hover {
-  color: white;
+  color: #AC3B61;
 }
-#about-me{
+#about-me, #gallery .container, #contact-me .container{
   height:100vh;
 }

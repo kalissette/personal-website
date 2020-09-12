@@ -30,10 +30,10 @@
                   <a class="nav-link" href="#about-me">About me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Gallery</a>
+                  <a class="nav-link" href="#gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact me</a>
+                  <a class="nav-link" href="#contact-me">Contact me</a>
                 </li>
               </ul>
             </div>
@@ -51,14 +51,14 @@
           <div id="carouselHeaderInterval" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-interval="10000">
-                <img src="images/salesforce.jpg" class="d-block w-100" alt="...">
+                <img src="images/salesforce.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>SALESFORCE DEVELOPER</h5>
                   <p></p>
                 </div>
               </div>
               <div class="carousel-item" data-interval="2000">
-                <img src="images/500.jpg" class="d-block w-100" alt="...">
+                <img src="images/front-end.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>FRONT-END DEVELOPER</h5>
                   <p></p>
@@ -133,10 +133,89 @@
   </div>
 
   <!-- GAllERY -->
-  <div id="gallery" class="container">
-    <div class="row">
-      gallery
+  <div id="gallery">
+    <div class="container my-4 d-flex">
+      <div id="multi-item-example" class="carousel slide carousel-multi-item justify-content-center align-self-center"
+        data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2 description">
+                  <img class="card-img-top" src="images/500.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Fiat 500</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2 description">
+                  <img class="card-img-top" src="images/maggiolino.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Volkswagen Maggiolino</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2 description">
+                  <img class="card-img-top" src="images/bmw.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">BMW</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+
+  <div id="contact-me">
+    <div class="container d-flex">
+      <div class="row justify-content-center align-self-center">
+        <div class="card col" style="width: 18rem;">
+          <img class="card-img-top" src="images/personal-photo.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Contact me!</h4>
+            <p class="card-text">I'd love to hear from you.</p>
+          </div>
+        </div>
+        <div class="col">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Your e-mail address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputSubject1">Subject</label>
+              <input type="text" class="form-control" id="exampleInputSubject1" placeholder="Enter subject">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputMessage1">Message</label>
+              <input type="text" class="form-control" id="exampleInputMessage1" placeholder="Enter your message">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="footer  "></div>
   </div>
 
 
