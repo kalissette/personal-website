@@ -37,10 +37,13 @@
   }
 
 }
+.fixed-top{
+  top:0px !important;
+}
 h5{
   font-weight: 700;
 }
-.navbar {
+.navbar, .page-footer{
   background-color: #AC3B61;
 }
 .carousel-item .d-block{
@@ -93,15 +96,18 @@ h5{
   color: #123C60;
 }
 .box{
-  margin:2%;
-  padding-bottom: 50px;
-  position: relative;
-  z-index: 1;
   transition: 0.3s;
 }
 .box:hover {
   color: #AC3B61;
 }
-#about-me, #gallery .container, #contact-me .container{
+#about-me  .container, #gallery .container, #contact-me .container{
   height:100vh;
+  align-items:center;
+  justify-content:space-around;
+  flex-direction: column;
+}
+
+#contact-me, #about-me{
+  background-color: #EDC7B7;
 }
