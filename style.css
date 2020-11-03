@@ -39,6 +39,7 @@
   align-items:center;
   justify-content:space-evenly;
   flex-direction: column;
+  border-bottom: 4px solid #AC3B61;
 }
 .home-photo {
   height:100vh;
@@ -123,6 +124,6 @@ h5{
   flex-direction: column;
 }
 
-#contact-me, #about-me, #home{
+#contact-me, #home-section{
   background-color: #EDC7B7;
 }
