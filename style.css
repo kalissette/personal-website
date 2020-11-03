@@ -9,7 +9,7 @@
   }
 }
 
-@media (min-width: 961px) { /*DESCKTOP*/
+@media (min-width: 961px) { /*DESKTOP*/
   .typewriter {
     font-family: 'PT Mono', monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -42,7 +42,7 @@
   border-bottom: 4px solid #AC3B61;
 }
 .home-photo {
-  height:100vh;
+  height:70vh;
   flex:1
 }
 .main-title{
@@ -53,6 +53,12 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+  color: #93EDD6;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
 }
 
 .fixed-top{
@@ -125,5 +131,5 @@ h5{
 }
 
 #contact-me, #home-section{
-  background-color: #EDC7B7;
+  background-image: url('images/Background.jpg');
 }
