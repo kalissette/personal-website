@@ -22,7 +22,7 @@ if($_POST) {
     if(isset($_POST['visitor_message'])) {
         $visitor_message = htmlspecialchars($_POST['visitor_message']);
     }
-    $recipient = "karenmaraviglia@gmail.com";
+    $recipient = 'karenmaraviglia@gmail.com';
      
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
