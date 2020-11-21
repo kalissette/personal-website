@@ -34,6 +34,13 @@
   }
 
 }
+
+body {
+  background-image: url('images/Background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 #home-section {
   display: flex;
   align-items:center;
@@ -54,6 +61,12 @@
   display: flex;
   flex-direction: column;
   color: #93EDD6;
+}
+
+h1{
+  font-weight: 800;
+  text-shadow: 2px 2px 8px grey;
+  color: #AC3B61;
 }
 
 .flex-center{
@@ -125,11 +138,11 @@ h5{
 }
 #about-me  .container, #gallery .container, #contact-me .container{
   height:100vh;
-  align-items:center;
-  justify-content:space-around;
+
   flex-direction: column;
+  background-color: white;
 }
 
-#contact-me, #home-section{
-  background-image: url('images/Background.jpg');
+#about-me, #gallery{
+
 }
