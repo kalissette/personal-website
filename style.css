@@ -4,32 +4,20 @@
 }
 
 @media (min-width: 400px) {
-    /*TABLET*/
     #home-section {
         flex-direction: row !important;
     }
 }
 
 @media (min-width: 961px) {
-    /*DESKTOP*/
-    #about-me .container,
-    #gallery .container,
-    #contact-me .container {
-        height: 100vh;
-    }
     .typewriter {
         font-family: 'PT Mono', monospace;
         overflow: hidden;
-        /* Ensures the content is not revealed until the animation */
         white-space: nowrap;
-        /* Keeps the content on a single line */
         margin: 0 auto;
-        /* Gives that scrolling effect as the typing happens */
         letter-spacing: .15em;
-        /* Adjust as needed */
         animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
     }
-    /* The typing effect */
     @keyframes typing {
         from {
             width: 0
@@ -38,7 +26,6 @@
             width: 100%
         }
     }
-    /* The typewriter cursor effect */
     @keyframes blink-caret {
         from,
         to {
@@ -48,6 +35,10 @@
             border-color: orange;
         }
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -68,7 +59,7 @@ strong {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .home-photo {
@@ -77,10 +68,9 @@ strong {
 }
 
 .main-title {
-    padding-top: 80px;
     text-align: center;
     flex: 1;
-    height: 100vh;
+    margin: auto;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -158,9 +148,54 @@ h5 {
     filter: brightness(80%);
 }
 
+#home-section,
 #about-me .container,
-#gallery .container,
+#gallery-section .container,
 #contact-me .container {
     flex-direction: column;
+    min-height: 100vh;
+}
+
+#about-me .container,
+#gallery-section .container,
+#contact-me .container {
     background-color: white;
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
 }
