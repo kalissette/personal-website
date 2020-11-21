@@ -1,89 +1,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=PT+Mono&family=Quicksand:wght@400;600;700&display=swap');
-*{
-  font-family: 'Quicksand', monospace;
+* {
+    font-family: 'Quicksand', monospace;
 }
-@media (min-width: 576px) {
-  .main-header{
+
+@media (min-width: 400px) {
+    #home-section {
+        flex-direction: row !important;
+    }
+}
+
+@media (min-width: 961px) {
+    .typewriter {
+        font-family: 'PT Mono', monospace;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+        from {
+            width: 0
+        }
+        to {
+            width: 100%
+        }
+    }
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent
+        }
+        50% {
+            border-color: orange;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('images/Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.margin-fix {
+    margin: auto;
+}
+
+#home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column !important;
+}
+
+.home-photo {
+    height: 70vh;
+    flex: 1
+}
+
+.main-title {
+    text-align: center;
+    flex: 1;
+    margin: auto;
+    justify-content: center;
+    display: flex;
     flex-direction: column;
-  }
+    color: #93EDD6;
 }
 
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
-  .typewriter {
+h1 {
+    font-weight: 800;
+    text-shadow: 2px 2px 8px grey;
+    color: #AC3B61;
+    text-align: center;
     font-family: 'PT Mono', monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+}
 
+.flex-center {
+    display: flex;
+    align-items: center;
 }
-h5{
-  font-weight: 700;
+
+h5 {
+    font-weight: 700;
 }
-.meter { 
-  height: 5px;
-  position: relative;
-  background: #f3efe6;
-  overflow: hidden;
+
+.navbar,
+.page-footer {
+    background-color: #AC3B61;
+}
+
+.carousel-item .d-block {
+    filter: blur(1px);
+}
+
+
+/* Skill*/
+
+.meter {
+    height: 5px;
+    position: relative;
+    background: #f3efe6;
+    overflow: hidden;
 }
 
 .meter span {
-  display: block;
-  height: 100%;
+    display: block;
+    height: 100%;
+    width: 80%;
 }
 
 .progress {
-  background-color: #e4c465;
-  animation: progressBar 3s ease-in-out;
-  animation-fill-mode:both; 
+    background-color: #123C60;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode: both;
 }
 
 @keyframes progressBar {
-0% { width: 0; }
-100% { width: 100%; }
-}
-.main-menu{
-  color:white;
-  background-color:grey;
-  font-size: 15px;
-}
-.main-header{
-  text-align:center;
-  display:flex;
-}
-.main-title, .carousel-caption{
-  padding:20%;
-}
-.carousel-inner img{
-  filter: brightness(80%);
-}
-.fixed-top{
-  top:20px;
-}
-.description{
-  padding-top:20%;
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
-#about-me{
-  height:100vh;
+.main-menu {
+    color: white;
+    background-color: grey;
+    font-size: 15px;
+}
+
+.main-header {
+    text-align: center;
+    display: flex;
+}
+
+.carousel-inner img {
+    filter: brightness(80%);
+}
+
+#home-section,
+#about-me .container,
+#gallery-section .container,
+#contact-me .container {
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#about-me .container,
+#gallery-section .container,
+#contact-me .container {
+    background-color: white;
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
