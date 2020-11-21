@@ -28,7 +28,7 @@ if($_POST) {
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $visitor_email . "\r\n";
      
-    if(mail($recipient, $email_title, $visitor_message, $headers)) {
+    if(mail($recipient, $email_title, $visitor_message)) {
         echo "<p>Thank you for contacting me, $visitor_name. You will get a reply within 24 hours.</p>";
     } else {
         echo '<p>I\'m sorry but the email did not go through.</p>';
