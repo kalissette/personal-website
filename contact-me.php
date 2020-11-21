@@ -31,7 +31,7 @@ if($_POST) {
     $success = mail($recipient, $email_title, $visitor_message)
     if (!$success) {
         $errorMessage = error_get_last()['message'];
-        echo error_get_last();
+        echo $errorMessage;
     }
      
 } else {
