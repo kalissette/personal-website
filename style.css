@@ -127,6 +127,7 @@ h5 {
 .meter span {
     display: block;
     height: 100%;
+    width: 80%;
 }
 
 .progress {
